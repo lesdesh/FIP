@@ -1,0 +1,211 @@
+/*
+Style Name: HTML Atributes & Forms 
+Description: FIP
+Author: Leslie DeShaw
+Version: 1.0
+Tags: Learning HTML
+*/
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* -------------
+  Fonts
+-------------- */
+
+
+/* ------------ */
+
+/* -------------
+  Plugins
+-------------*/
+
+/* -------------
+  Reset
+-------------*/
+
+body {
+   margin: 0;
+   padding: 0;
+   color: #333333;
+   background-color: #EDEDED;
+}
+
+/* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+
+/* 01. General Styles                        
+   02. CSS Grid                           
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+   .hidden {
+       display: none;
+   }
+
+   .box-model {
+      margin: 1rem;
+      padding: 1rem;
+      background: #000;
+   }
+
+   section {
+      margin: 3rem 0;
+   }
+
+   .spacer {
+      margin: .5em;
+   }
+
+/* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+     
+      .site {
+         max-width: none;
+      }
+
+      /*--------- Grid Items ---------*/
+
+      .head, .main > *, .foot > * {
+         display: grid;
+         grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr;
+      }
+
+      .one-item {
+         display: grid;
+         grid-column: 2 / span 2 ;
+         grid-template-columns: 1fr;
+      }
+
+      .two-items {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: repeat(2, 1fr);
+         justify-content: space-evenly;
+      }
+
+      .three-items {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: space-evenly;
+      }
+
+      .four-items {
+         display: grid;
+         grid-column: 2 / span 2;
+         grid-template-columns: repeat(4, 1fr);
+         justify-content: space-evenly;
+      }
+
+
+      /*--------- End Grid Items ---------*/
+
+      /*--------- Site Header ---------*/
+
+      .logo {
+         grid-column: 1 / span 1; /* first number is what grid number to start at, the secon is how far to span */
+      }
+
+      .nav {
+         grid-column: 2 / span 3;
+      }
+
+      /*--------- End Site Header ---------*/
+
+      /*--------- Start Hero ---------*/
+
+      .hero {
+         margin: 0 0;
+      }
+
+      .hero-img img {
+         width: 100%;
+      }
+
+      .hero-img {
+         display: grid;
+         grid-column: span 4;
+         margin-bottom: 1rem;
+      }
+
+      .hero-img > * {
+         grid-column: 1;
+         grid-row: 1;
+      }
+
+      .hero-img h2.right {
+         align-self: flex-end;
+         justify-self: end;
+         margin-right: 9em;
+      }
+
+      .hero-img h2.left {
+         align-self: flex-end;
+         justify-self: start;
+         margin-left: 9em;
+      }
+
+      /*--------- End Hero ---------*/
+
+   }
+   
+
+   .title {
+    font-family: looking-flowers-script,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    color: #50675C;
+   }
+   .fact {
+    font-family: agenda,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #50675C;
+   }
+
+   p {
+    font-family: agenda,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+   }
