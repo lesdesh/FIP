@@ -78,19 +78,7 @@ ___________________________________________ */
        display: none;
    }
 
-   .box-model {
-      margin: 1rem;
-      padding: 1rem;
-      background: #000;
-   }
 
-   section {
-      margin: 3rem 0;
-   }
-
-   .spacer {
-      margin: .5em;
-   }
 
 /* _____________________________________
 
@@ -128,6 +116,8 @@ ___________________________________________ */
          grid-column: 2 / span 2;
          grid-template-columns: repeat(3, 1fr);
          justify-content: space-evenly;
+         row-gap: 2em;
+         column-gap: 2em;
       }
 
       .four-items {
@@ -142,13 +132,51 @@ ___________________________________________ */
 
       /*--------- Site Header ---------*/
 
+      .header{}
+
       .logo {
-         grid-column: 1 / span 1; /* first number is what grid number to start at, the secon is how far to span */
+         grid-column: 1 / span 1;
+         display: inline-flex;
       }
+
+      .logo img {
+         padding: 1em;
+         width: 35%;
+         float:left
+      }
+
 
       .nav {
          grid-column: 2 / span 3;
+         width: 1000px;
+         height: 35px;
+         font-size: 16px;
+         font-family: agenda, sans-serif;
+         font-weight: bold;
+         text-align: center;
+         background-color: #7DA279;
+             border-radius: 8px;
+            
       }
+      .nav ul {
+         height: auto;
+         padding: 8px 0px;
+         margin: 0px;
+         
+       
+      }
+      .nav li {
+         display: inline;
+         padding: 90px;
+       
+         }
+         .nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 8px 8px 8px;
+            
+        }
+      
 
       /*--------- End Site Header ---------*/
 
@@ -196,6 +224,7 @@ ___________________________________________ */
     font-style: normal;
     font-size: 5em;
     color: #50675C;
+    padding-left: em;
    }
    .fact {
     font-family: agenda,sans-serif;
@@ -209,3 +238,61 @@ ___________________________________________ */
     font-weight: 500;
     font-style: normal;
    }
+
+   /*gallery*/
+
+   .container{
+      max-width:1200px;
+      margin: auto;
+      background:#7DA279;
+      overflow:auto;
+
+   }
+ .gallery{
+    margin:100px;
+    float:left;
+    width:390px;
+    height:300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+ }
+ .gallery img{
+    width 100%
+    height:auto;
+    text-align: center;
+    
+ }
+
+ .desc{
+    padding: 15px;
+    text-align: center;
+ }
+ #menu {
+   width: 550px;
+   height: 35px;
+   font-size: 16px;
+   font-family: agenda, sans-serif;
+   font-weight: bold;
+   text-align: center;
+   background-color: #7DA279;
+       border-radius: 8px;
+       
+}
+#menu ul {
+   height: auto;
+   padding: 8px 0px;
+   margin: 0px;
+}
+#menu li {
+   display: inline;
+   padding: 20px;
+   }
+   #menu a {
+      text-decoration: none;
+      color: #333;
+      padding: 8px 8px 8px 8px;
+  }
+
+ 
