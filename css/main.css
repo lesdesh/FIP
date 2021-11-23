@@ -61,6 +61,9 @@ body {
    padding: 0;
    color: #333333;
    background-color: #EDEDED;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
 }
 
 /* ___________________________________________
@@ -78,8 +81,6 @@ ___________________________________________ */
    .hidden {
        display: none;
    }
-
-
 
 /* _____________________________________
 
@@ -291,27 +292,14 @@ header {
 
 /*index page*/
 
-.about{
-   font-family: looking-flowers-script,sans-serif;
-   font-weight: 400;
-   font-style: normal;
-   font-size: 70px;
-   color: #50675C;
-  
-}
+
 
 .container {
    display: flex;
    align-items: flex-start;
    justify-content: flex-start;
  }
- .about{
-   padding-left: 20px;
-   align-items:flex-end;
-   justify-content: flex-end;
-   
-
- }
+ 
  
  img {
    max-width: 100%
@@ -319,18 +307,141 @@ header {
  }
  
  .image {
-   
-   
-
-  
- 
+    margin-left: 70px;
+    margin-bottom: 100px;
+    float: left;
   
  }
+   
+ .about-text{
+    margin-left: 650px;
+    position: relative;
+ }
+ h3{
+   font-family: looking-flowers-script,sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 5em;
+   color: #50675C;
+   
+ }
  
- .about-text {
-   font-size: 20px;
-   padding-left: 20px;
-   align-items: flex-end;
-   justify-content: flex-end;
+ .about-text p{
+   font-family: agenda,sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2em;
+   flex-wrap: wrap;
+   position:absolute;
+   bottom: -210px;
+
+  }
+
+  .fact-img-middle{
+     text-align: center;
+     margin-left: 160px;
+     
+     
+  }
+.fact-left{
+   float:left;
+}
+.fact-left h4{
+   font-family: "agenda", sans-serif ;
+   color: #50675C;
+   font-size: 25px;
+   margin-left: 275px;
+
+}
+
+.fact-left p span{
+   display: block; 
+   text-align: center;
+   font-family: "agenda", sans-serif ;
+   color: #333333;
+   font-size: 18px;
+   margin-left: 200px;
+}
+
+.fact-img-1{
+   float:left;
+   margin-left:200px;
+}
+.fact-bottom{
+   text-align: center;
+
+}
+.fact-bottom h4{
+   font-family: "agenda", sans-serif ;
+   color: #50675C;
+   font-size: 25px;
+   text-align: center;
+   align-items: center;
+   margin-left: 250px;
+
+}
+.fact-bottom p span {
+   display: block; 
+   text-align: center;
+   font-family: "agenda", sans-serif ;
+   color: #333333;
+   font-size: 18px;
+   margin-left: 250px;
+
+}
+
+.fact-img-3 {
    float: right;
+   margin-right: 5px;
+   margin-top: 300px;
+}
+
+.fact-right{
+   float:right;
+   text-align: center;
+   position: relative;
+   bottom: 300px;
+   right: 300px;
+   top: -400px;
+}
+.fact-right h4 {
+   font-family: "agenda", sans-serif ;
+   color: #50675C;
+   font-size: 25px;
+   text-align: center;
+   align-items: center;
+   display: inline;
+
+   position: relative;
+}
+.fact-right p span {
+   display: block; 
+   text-align: center;
+   font-family: "agenda", sans-serif ;
+   color: #333333;
+   font-size: 18px;
+
+   position: relative;
+}
+.fact-img-1{
+   float: left;
+   position:relative;
+   margin-top: -115px;
+}
+ 
+
+  /*footer*/ 
+
+  .footer-nav {
+   float:right;
+   margin-right: 150px;
+
   
+  }
+  .contact-footer {
+     float: right;
+     position: relative;
+     right: 150px ;
+   
+  }
+ 
