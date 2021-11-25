@@ -64,6 +64,7 @@ body {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+   
 }
 
 /* ___________________________________________
@@ -428,6 +429,10 @@ header {
    position:relative;
    margin-top: -115px;
 }
+.facts{
+  margin-top: 30px;
+  margin-left: 30px;
+}
  
 
   /*footer*/ 
@@ -435,6 +440,7 @@ header {
   .footer-nav {
    float:right;
    margin-right: 150px;
+   
 
   
   }
@@ -443,5 +449,58 @@ header {
      position: relative;
      right: 150px ;
    
+  }
+
+  .contact-form {
+     width:500px;
+     background-color: #aed1aa;
+     box-shadow: 0 0 20px 0 #999;
+     top: 50%; 
+     left: 50%;
+     transform: translate(-50%,-50%);
+     position: absolute;
+     border-radius: 14px;
+     font-family: "agenda", sans-serif;
+     margin-top: 100px;
+    
+
+
+  }
+  form {
+     margin:35px;
+
+  }
+
+  .input-field {
+     width: 400px;
+     height: 40px;
+     margin-top: 20px;
+     padding-left: 10px;
+     padding-right: 10px;
+     border: 1px #50675C;
+     border-radius: 14px;
+     outline: none;
+
+  }
+  .textarea-field {
+     height: 150px;
+     padding-top: 10px;
+
+  }
+  h2 {
+    
+     font-family: looking-flowers-script,sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 3em;
+   color: #50675C;
+   text-align: center;
+  }
+  .contact-desc {
+     
+     font-family: "agenda", sans-serif;
+     font-size: 15px;
+     margin-bottom: 300px;
+     text-align: center;
   }
  
