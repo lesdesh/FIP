@@ -170,6 +170,7 @@ header {
    justify-content: flex-end;
    align-items: center;
    padding: 30px 10%;
+   background-color: #aed1aa;
 }
 
  .nav-links {
@@ -437,9 +438,18 @@ header {
 
   /*footer*/ 
 
+  footer{
+   display: flex;
+   justify-content: flex-end; 
+   padding: 30px 10%;
+   background-color: #aed1aa;
+  }
+
   .footer-nav {
    float:right;
    margin-right: 150px;
+   margin-top: -20px;
+
    
 
   
@@ -447,8 +457,12 @@ header {
   .contact-footer {
      float: right;
      position: relative;
-     right: 150px ;
+     top: 20px
    
+  }
+  .footer-contactpage{
+     margin-top: 200px;
+     top: -10px
   }
 
   .contact-form {
@@ -461,7 +475,7 @@ header {
      position: absolute;
      border-radius: 14px;
      font-family: "agenda", sans-serif;
-     margin-top: 100px;
+     margin-top: 80px;
     
 
 
@@ -502,5 +516,56 @@ header {
      font-size: 15px;
      margin-bottom: 300px;
      text-align: center;
+  }
+
+  /*dog*/
+
+  .bio-title{
+   font-family: looking-flowers-script,sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 3em;
+   color: #50675C;
+   margin-left:10em;
+   text-align: left;
+  }
+
+  .charlee-profile{
+   margin-left: 70px;
+   
+   float: left;
+  }
+
+  .charlee-bio{
+   font-family: agenda,sans-serif;
+   font-weight: 400;
+   font-style: normal;
+  }
+  .acee-pic{
+     float:right;
+     margin-right: 70px;
+  }
+  .acee-bio{
+   font-family: agenda,sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   margin-left:1em;
+  }
+  .acee-title{
+   font-family: looking-flowers-script,sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 3em;
+   color: #50675C;
+   margin-left:1em;
+   text-align: left;
+   margin-top: 100px;
+
+  }
+
+  .ash-profile{
+   margin-left: 70px;
+   
+   float: left;
   }
  
