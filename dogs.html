@@ -10,6 +10,7 @@
     <title>My Lovely Dogs</title>
 </head>
 <body>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
     <h1 class="hidden">My Lovely Dogs</h1>
     <header>
         <img class="logo" src=images/ears-logo-with-text.svg alt="ears-logo">
@@ -19,16 +20,21 @@
             <li><a href="index.html">About</a></li>
             <li><a href="dogs.html">The Dogs</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li class="contact"><a href="contact.html">Contact</a></li>
         </ul>
 
     </nav>
-    <a class="contact" href="contact.html"><button>Contact</button></a>
     </header>
+    <main  id="content">
     <section>
     <h2 class="hidden">The Dogs</h2>
+    <div class="spacing">
+        <h2 class="hidden">Spacing</h2>
+    </div>
+    <div class="background">
                 <h3 class="bio-title">Charlee</h3>
                 <div>
-                <img class="charlee-profile" src="images/charlee-7.JPG">
+                <img class="charlee-profile" src="images/charlee-7.JPG" alt="white dog sitting in leaves looking at camera">
                 </div>
             <p class="charlee-bio">
                 Charlee is a 9 year old shepard lab mix. She loves being lazy on the couch and watching
@@ -37,7 +43,7 @@
             </p>
             
             <h2 class="bio-title">Charlee's Stats</h2>
-            <ul>
+            <ul class="stats">
                 <li>Height:47 inches</li>
                 <li>Weight: 89lbs</li>
                 <li>Colour: White</li>
@@ -46,9 +52,14 @@
                 <li>Birth Date: June 14,2012</li>
                 <li>Favourite Food: Sweet Potatos</li>
             </ul>
+            </div>
+            <div class="spacing">
+                <h2 class="hidden">Spacing</h2>
+            </div>
+            <div class="background">
            <h3 class="acee-title">Acee</h3>
             <div>
-                <img class="acee-pic" src="images/acee-2.jpg">
+                <img class="acee-pic" src="images/acee-2.jpg" alt="brown dog sitting in field looking up at the camera above her">
             </div>
             <p class="acee-bio">
                 Acee is Charlee’s younger sister! Acee is a rescue dog, so her breed is unknown. She is believed
@@ -57,7 +68,7 @@
                 food is apples!
             </p>
             <h2 class="acee-title">Acee's Stats</h2>
-            <ul>
+            <ul class="acee-stats">
                 <li>Height:30 inches</li>
                 <li>Weight: 42lbs</li>
                 <li>Colour: Brown/Brindle</li>
@@ -66,19 +77,23 @@
                 <li>Birth Date: August 12, 2014</li>
                 <li>Favourite Food: Apples</li>
             </ul>
-            
+            </div>
+            <div class="spacing">
+                <h2 class="hidden">Spacing</h2>
+            </div>
+            <div class="background">
           <h3 class="bio-title">Ash</h3>
                 <div>
-                    <img class="ash-profile" src="https://via.placeholder.com/400x400"
+                    <img class="ash-profile" src="images/ash-cowboy.jpg" alt=" black dog wearing a cowboy hat outside">
                 </div>
-            <p>
+            <p class="ash-bio">
                 Ash is the newest addition to the family. Ash doesn't live with Charlee and Acee but they’re
                 best friends! Ash is a rescue dog as well. He was rescued all the way from Nashville, Tennesse!
                 Ash is a very lazy dog and doesn't enjoy playing too much. He will play as long as you’re playing
                 with him. Ash would much rather laying in bed all day while you give him lots of pets! 
             </p>
             <h2 class="bio-title">Ash's Stats</h2>
-            <ul>
+            <ul class="stats">
                 <li>Height:33 inches</li>
                 <li>Weight:46lbs</li>
                 <li>Colour:Black</li>
@@ -87,26 +102,32 @@
                 <li>Birth Date: December 21, 2018</li>
                 <li>Favourite Food: Beef Lung</li>
             </ul>
-          
+            
+          </div>
+          <div class="spacing">
+              <h2 class="hidden">Spacing</h2>
+          </div>
         </section>
+        </main>
         <footer>
             <section>
-                <h2 class="hidden">Site Footer</h2>
-             
-            
+                <h2 class="hidden">Footer</h2>
+        
                 <h3 class="hidden">Contact Information</h3>
-              
-                <nav aria-label="Footer Navigation">
+                
                     <h3 class="hidden">Footer Nav</h3>
-                    <nav>
+                    <aside aria-label="Footer Navigation">
+                    <nav class= "footer-nav">
                         <ul class="nav-links">
                             <li><a href="index.html">About</a></li>
                             <li><a href="dogs.html">The Dogs</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
+                            <li class="contact"><a href="contact.html">Contact</a></li>
                         </ul>
-                    </nav>
-               
+                </nav>
+            </aside>
             </section>
+            
             </footer>
 </body>
 </html>
