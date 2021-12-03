@@ -144,8 +144,6 @@ ___________________________________________ */
 
       }
       
-   
-      
 
       .logo {
          grid-column: 1 / span 1;
@@ -209,7 +207,20 @@ header {
    background-color: rgba(80, 103, 92,0.7);
  }
 
-      
+     /*footer*/ 
+
+  footer{
+   display: flex;
+   justify-content: flex-end; 
+   padding: 30px 10%;
+   background-color: #aed1aa;
+   
+  }
+
+  .footer-nav {
+   float:right;
+   margin-top: -20px;
+  }
         
       
 
@@ -251,7 +262,7 @@ header {
       /*--------- End Hero ---------*/
 
    }
-   
+   /*misc*/
 
    .title {
     font-family: looking-flowers-script,sans-serif;
@@ -259,7 +270,7 @@ header {
     font-style: normal;
     font-size: 5em;
     color: #50675C;
-    padding-left: em;
+    text-align: center;
    }
    .fact {
     font-family: agenda,sans-serif;
@@ -274,46 +285,7 @@ header {
     font-style: normal;
    }
 
-   /*gallery*/
-
-   .container{
-      max-width:1200px;
-      margin: auto;
-      background:
-      overflow:auto;
-
-   }
- .gallery{
-    margin:100px;
-    float:left;
-    width:390px;
-    height:300px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
- 
- }
- .gallery img{
-    width 100%
-    height:auto;
-    text-align: center;
-
-    
- }
-
- .gallery-btm{
-   width 100%
-   height:auto;
-   text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px
- }
-
- .desc{
-    padding: 15px;
-    text-align: center;
- }
-
+  
 /*index page*/
 
 
@@ -341,11 +313,11 @@ header {
     margin-left: 650px;
     position: relative;
  }
- h3{
+ h2{
    font-family: looking-flowers-script,sans-serif;
    font-weight: 400;
    font-style: normal;
-   font-size: 5em;
+   font-size: 4em;
    color: #50675C;
    margin-left: -100px;
    
@@ -373,7 +345,7 @@ header {
 .fact-left{
    float:left;
 }
-.fact-left h4{
+.fact-left h3{
    font-family: "agenda", sans-serif ;
    color: #50675C;
    font-size: 25px;
@@ -398,7 +370,7 @@ header {
    text-align: center;
 
 }
-.fact-bottom h4{
+.fact-bottom h3{
    font-family: "agenda", sans-serif ;
    color: #50675C;
    font-size: 25px;
@@ -431,7 +403,7 @@ header {
    right: 300px;
    top: -400px;
 }
-.fact-right h4 {
+.fact-right h3 {
    font-family: "agenda", sans-serif ;
    color: #50675C;
    font-size: 25px;
@@ -461,92 +433,7 @@ header {
 }
  
 
-  /*footer*/ 
-
-  footer{
-   display: flex;
-   justify-content: flex-end; 
-   padding: 30px 10%;
-   background-color: #aed1aa;
-   
-  }
-
-  .footer-nav {
-   float:right;
-   margin-right: 
-   margin-top: -20px;
-
-   
-
-  
-  }
-  .contact-footer {
-     float: right;
-     position: relative;
-     top: 20px
-   
-  }
-  .footer-contactpage{
-     margin-top: 200px;
-     top: -10px;
-     
-  }
-
-  .contact-form {
-     width:500px;
-     background-color: #aed1aa;
-     
-     top: 50%; 
-     left: 50%;
-     transform: translate(-50%,-50%);
-     position: absolute;
-     border-radius: 14px;
-     font-family: "agenda", sans-serif;
-     margin-top: 85px
-     
-    
-
-
-  }
-  form {
-     margin:35px;
-     
-
-  }
-
-  .input-field {
-     width: 400px;
-     height: 40px;
-     margin-top: 20px;
-     padding-left: 10px;
-     padding-right: 10px;
-     border: 1px #50675C;
-     border-radius: 14px;
-     outline: none;
-
-  }
-  .textarea-field {
-     height: 150px;
-     padding-top: 10px;
-
-  }
-  h2 {
-    
-     font-family: looking-flowers-script,sans-serif;
-   font-weight: 400;
-   font-style: normal;
-   font-size: 3em;
-   color: #50675C;
-   text-align: center;
-  }
-  .contact-desc {
-     
-     font-family: "agenda", sans-serif;
-     font-size: 15px;
-     margin-bottom: 300px;
-     text-align: center;
-     
-  }
+ 
 
   /*dog*/
 
@@ -634,3 +521,108 @@ header {
   .spacing{
      margin-bottom: 100px;
   }
+   /*gallery*/
+
+   .container{
+      max-width:1200px;
+      margin: auto;
+      background:
+      overflow:auto;
+
+   }
+ .gallery{
+    margin:100px;
+    float:left;
+    width:390px;
+    height:300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ 
+ }
+ .gallery img{
+    width 100%
+    height:auto;
+    text-align: center;
+
+    
+ }
+
+ .gallery-btm{
+   width 100%
+   height:auto;
+   text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px
+ }
+
+ .desc{
+    padding: 15px;
+    text-align: center;
+ }
+
+ /*contact*/
+
+ .contact-footer {
+   float: right;
+   position: relative;
+   top: 20px
+ 
+}
+.footer-contactpage{
+   margin-top: 200px;
+   top: -10px;
+   
+}
+
+.contact-form {
+   width:500px;
+   background-color: #aed1aa;
+   
+   top: 50%; 
+   left: 50%;
+   transform: translate(-50%,-50%);
+   position: absolute;
+   border-radius: 14px;
+   font-family: "agenda", sans-serif;
+   margin-top: 85px
+   
+  
+
+
+}
+form {
+   margin:35px;
+   
+
+}
+
+.input-field {
+   width: 400px;
+   height: 40px;
+   margin-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border: 1px #50675C;
+   border-radius: 14px;
+   outline: none;
+
+}
+.textarea-field {
+   height: 150px;
+   padding-top: 10px;
+
+}
+.contact-title{
+   text-align: center;
+   margin-left: 1px;
+}
+
+.contact-desc {
+   
+   font-family: "agenda", sans-serif;
+   font-size: 15px;
+   margin-bottom: 300px;
+   text-align: center;
+   
+}
